@@ -1,7 +1,6 @@
 package taskManagerPkg;
 
 //Give your desired Path locations
-
 public interface Constants {
 	String SUCCESS="SUCCESS";
 	String FAILED="FAILED";
