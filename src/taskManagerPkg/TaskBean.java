@@ -103,8 +103,7 @@ public class TaskBean {
 				&& this.to_Date.equals(tb.getToDate()) && this.priority==tb.getPriority()
 				&& this.tags.equals(tb.getTags())) {
 					return true;
-			}
-			
+			}			
 		}
 		return false;
 	}
