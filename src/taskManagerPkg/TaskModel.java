@@ -25,10 +25,7 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
 public class TaskModel {
-	
-	//public static final String folderPath="C:\\Users\\Server\\Desktop\\TaskManager";
-	
-	
+
 	public static SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
 	
 	public static boolean isValidCategoryName(String categoryName) {
@@ -60,20 +57,15 @@ public class TaskModel {
 	        try {
 	            boolean isFileCreated = categoryFile.createNewFile();
 	            if (isFileCreated) {
-//	                System.out.println("Category file created: " + categoryFile.getName());
 	            	return true;
 	            }
 	        } 
 	        catch (IOException e) {
-	            //System.out.println("An error occurred while creating the category file.");
 	            e.printStackTrace();
 	            return false;
 	        }
 	    } 
-//	    else {
-//	        System.out.println("Category file already exists: " + categoryFile.getName());
-//	    	
-//	    }
+
 		return false;
 	}
 
@@ -274,8 +266,6 @@ public class TaskModel {
 			bw=new BufferedWriter(new FileWriter(Constants.folderPath+"\\"+categoryName+".todo"));
 			
 			for(TaskBean task:tasks) {
-//				SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
-//				//bw.write(task.getName()+"::"+task.getDesc()+"::"+task.getPriority()+"::"+task.getTags()+"::"+task.getToDate());
 				bw.write(task.toString());
 				bw.newLine();
 			}
@@ -330,14 +320,7 @@ public class TaskModel {
 		return false;
 	}
 	public static void searchTask(String categoryName,String taskName) {
-//		List<TaskBean>tasks=getTasks(categoryName);
-//		for(TaskBean task:tasks) {
-//			if(task.getName().equals(taskName)) {
-//				System.out.println(task);
-//				return;
-//			}
-//		}
-//		System.out.println("task does not exist");
+
 		if(taskExist(categoryName, taskName)) {
 			System.out.println(taskName);
 				return;
@@ -455,17 +438,15 @@ public class TaskModel {
 	    	}
 	    }
 	}
+
 	
 	//excel
-	
-
 	public static String categoryFilesToExcel() {
 	    Workbook workbook = new HSSFWorkbook();
 	    try {
-	        // Creating a new sheet in the Excel workbook
+	        
 	        Sheet sheet = workbook.createSheet("Categories");
 
-	        // Creating header row
 	        Row header = sheet.createRow(0);
 	        header.createCell(0).setCellValue("Category Name");
 	        header.createCell(1).setCellValue("Task Name");
@@ -474,24 +455,17 @@ public class TaskModel {
 	        header.createCell(4).setCellValue("Due Date");
 	        header.createCell(5).setCellValue("Tags");
 
-	        // Retrieve the list of category files (this is your custom method)
 	        List<File> catFiles = listCatFiles();
-	        int rowNum = 1; // Start from the second row
+	        int rowNum = 1; 
 
-	        // Loop through categories
 	        for (File file : catFiles) {
 	            String catName = file.getName().substring(0, file.getName().indexOf(".todo"));
-	            
-	            // Create a row for each category
 	            Row categoryRow = sheet.createRow(rowNum++);
 	            categoryRow.createCell(0).setCellValue(catName);
 
-	            // For each category, list tasks (assuming you have a list of tasks for each category)
-	            List<TaskBean> tasks = new ArrayList<>();
-	            // You would need a method like TaskModel.getTasksForCategory(catName) to get tasks for this category
+	            List<TaskBean> tasks = new ArrayList<>();y
 	            tasks = TaskModel.getTasks(catName);
 
-	            // For each task, create a new row in Excel
 	            for (TaskBean task : tasks) {
 	                Row taskRow = sheet.createRow(rowNum++);
 	                taskRow.createCell(0).setCellValue(catName);  // Add the category name
@@ -503,7 +477,6 @@ public class TaskModel {
 	            }
 	        }
 
-	        // Write the output to a file
 	        FileOutputStream fileOut = new FileOutputStream(Constants.excelPath);
 	        workbook.write(fileOut);
 	        fileOut.close();
