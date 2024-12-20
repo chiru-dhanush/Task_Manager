@@ -51,6 +51,7 @@ public class Logger {
 			}
 		}).start();
 	}
+	
 	public String formatMessage(String data,int priority) {
 		SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 		String dateStr=sdf.format(new Date());
