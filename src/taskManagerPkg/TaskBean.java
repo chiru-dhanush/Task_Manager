@@ -66,6 +66,7 @@ public class TaskBean {
 		}
 		
 	}
+	
 	public void setPriority(int priority) {
 		if(priority<1 || priority>10) {
 			throw new IllegalArgumentException("Enter priority between range 1-10");
