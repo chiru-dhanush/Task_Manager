@@ -1,0 +1,44 @@
+Starting TaskManager , 1 , 20/12/24 10:40:06 
+main() starts , 4 , 20/12/24 10:40:06 
+Listing category starts , 3 , 20/12/24 10:40:08 
+Listing category ends , 3 , 20/12/24 10:40:08 
+Deleting category starts , 3 , 20/12/24 10:40:12 
+Deleting category ends , 3 , 20/12/24 10:40:15 
+Listing category starts , 3 , 20/12/24 10:40:17 
+Listing category ends , 3 , 20/12/24 10:40:17 
+Starting Create Category , 3 , 20/12/24 10:41:11 
+1.Creating task , 2 , 20/12/24 10:41:21 
+Ending Create Taksk , 2 , 20/12/24 10:41:51 
+1.Creating task , 2 , 20/12/24 10:42:08 
+Ending Create Taksk , 2 , 20/12/24 10:42:43 
+Starting Create Category , 3 , 20/12/24 10:42:58 
+1.Creating task , 2 , 20/12/24 10:43:09 
+Ending Create Taksk , 2 , 20/12/24 10:43:42 
+1.Creating task , 2 , 20/12/24 10:43:46 
+Ending Create Taksk , 2 , 20/12/24 10:44:29 
+Starting Create Category , 3 , 20/12/24 10:44:36 
+1.Creating task , 2 , 20/12/24 10:44:46 
+Ending Create Taksk , 2 , 20/12/24 10:45:19 
+1.Creating task , 2 , 20/12/24 10:45:28 
+Ending Create Taksk , 2 , 20/12/24 10:46:43 
+Starting Create Category , 3 , 20/12/24 10:46:51 
+1.Creating task , 2 , 20/12/24 10:46:59 
+Ending Create Taksk , 2 , 20/12/24 10:48:10 
+1.Creating task , 2 , 20/12/24 10:48:14 
+Ending Create Taksk , 2 , 20/12/24 10:48:47 
+Starting Create Category , 3 , 20/12/24 10:48:53 
+1.Creating task , 2 , 20/12/24 10:48:59 
+Ending Create Taksk , 2 , 20/12/24 10:49:34 
+1.Creating task , 2 , 20/12/24 10:49:37 
+Ending Create Taksk , 2 , 20/12/24 10:50:19 
+Listing category starts , 3 , 20/12/24 10:50:31 
+Listing category ends , 3 , 20/12/24 10:50:31 
+Loading category starts , 3 , 20/12/24 10:50:34 
+Loading category ends , 3 , 20/12/24 10:50:37 
+Loading category starts , 3 , 20/12/24 10:50:40 
+Loading category ends , 3 , 20/12/24 10:50:48 
+Loading category starts , 3 , 20/12/24 10:50:50 
+Loading category ends , 3 , 20/12/24 10:50:53 
+Loading category starts , 3 , 20/12/24 10:50:57 
+Loading category ends , 3 , 20/12/24 10:51:01 
+main() ends , 4 , 20/12/24 10:51:10 
