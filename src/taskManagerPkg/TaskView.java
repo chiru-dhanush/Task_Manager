@@ -71,7 +71,6 @@ import java.util.Scanner;
 															task_toDate=sc2.nextLine();
 															
 															if(TaskModel.isValidToDate(task_toDate)) {
-																//task_toDate=sdf.parse(strDate);
 																
 																System.out.println("Enter Task Tags seperated by ','(commas)");
 																taskTags=sc2.nextLine();
